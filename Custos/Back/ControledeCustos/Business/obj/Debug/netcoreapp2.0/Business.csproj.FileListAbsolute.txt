@@ -1,0 +1,14 @@
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Business.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Business.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Dal.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Model.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Dal.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\bin\Debug\netcoreapp2.0\Model.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.csprojAssemblyReference.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.csproj.CopyComplete
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Business\obj\Debug\netcoreapp2.0\Business.pdb

@@ -1,0 +1,12 @@
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\bin\Release\netcoreapp2.0\Dal.deps.json
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\bin\Release\netcoreapp2.0\Dal.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\bin\Release\netcoreapp2.0\Dal.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\bin\Release\netcoreapp2.0\Model.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\bin\Release\netcoreapp2.0\Model.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.csprojAssemblyReference.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.AssemblyInfoInputs.cache
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.AssemblyInfo.cs
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.csproj.CopyComplete
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.dll
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Dal\obj\Release\netcoreapp2.0\Dal.pdb
