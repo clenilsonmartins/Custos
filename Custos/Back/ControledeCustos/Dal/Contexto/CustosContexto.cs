@@ -25,6 +25,12 @@ namespace Dal
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //modelBuilder.Entity<Funcionario>(entity =>
+            //{
+            //    entity.HasMany(s => s.Departamentos)
+            //   .WithOne(c => c.Funcionario);
+            //});
+
             modelBuilder.Entity<Movimentacao>(entity =>
             {
                 entity.HasOne(d => d.Funcionario)
@@ -49,6 +55,8 @@ namespace Dal
                     .HasForeignKey(d => d.CodigoDepartamento);
             });
             
+
+
         }
 
     }

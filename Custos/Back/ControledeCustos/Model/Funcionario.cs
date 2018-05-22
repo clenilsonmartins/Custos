@@ -23,6 +23,9 @@ namespace Model
         [Display(Name = "Requerido Email do Funcionario")]
         [MaxLength(100, ErrorMessage = "No máximo {1} caracteres no campo {0} ")]
         public string Email { get; set; }
-        
+
+        [NotMapped]
+        public virtual ICollection<Departamento> Departamentos { get; set; }
+
     }
 }

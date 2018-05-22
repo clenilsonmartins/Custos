@@ -1,0 +1,31 @@
+﻿<h1>Lista de Movimentações</h1>
+<p *ngIf="!MovList"><em>Loading...</em></p>
+<p>
+    <a [routerLink]="['/movimentacao/edit']">Adicionar Novo</a>
+</p>
+<table class='table' *ngIf="MovList">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Descricao</th>
+            <th>Funcionario</th>
+            <th>Departamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mov of MovList">
+            <td>{{ mov.codigo }}</td>
+            <td>{{ mov.dataMovimentacao }}</td>
+            <td>{{ mov.valor }}</td>
+            <td>{{ mov.descricao }}</td>
+            <td>{{ mov.funcionario.nome }}</td>
+            <td>{{ mov.departamento.nome }}</td>
+            <td>
+                <a [routerLink]="['/movimentacao/edit/', mov.codigo]">Editar</a> |
+                <a [routerLink]="" (click)="delete(mov.codigo)">Apagar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

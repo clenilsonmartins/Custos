@@ -1,9 +1,9 @@
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\bin\Debug\netcoreapp2.0\Model.deps.json
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\bin\Debug\netcoreapp2.0\Model.dll
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\bin\Debug\netcoreapp2.0\Model.pdb
-C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.csprojAssemblyReference.cache
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.csproj.CoreCompileInputs.cache
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.AssemblyInfoInputs.cache
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.AssemblyInfo.cs
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.dll
 C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.pdb
+C:\Users\cleni\Desktop\Custos\Custos\Back\ControledeCustos\Model\obj\Debug\netcoreapp2.0\Model.csprojAssemblyReference.cache

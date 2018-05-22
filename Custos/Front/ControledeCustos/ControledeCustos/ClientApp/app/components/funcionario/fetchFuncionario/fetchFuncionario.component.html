@@ -1,0 +1,29 @@
+﻿<h1>Lista de Funcionario</h1>
+
+<p *ngIf="!funList"><em>Loading...</em></p>
+
+<p>
+    <a [routerLink]="['/funcionario/edit']">Adicionar Novo</a>
+</p>
+
+<table class='table' *ngIf="funList">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funList">
+            <td>{{ funcionario.codigo }}</td>
+            <td>{{ funcionario.nome }}</td>
+            <td>{{ funcionario.email }}</td>
+            <td>
+            <td>
+                <a [routerLink]="['/funcionario/edit/', funcionario.codigo]">Editar</a> |
+                <a [routerLink]="" (click)="delete(funcionario.codigo)">Apagar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

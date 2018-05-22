@@ -27,6 +27,7 @@
           "Castle.Core": "4.2.1",
           "Castle.Windsor": "4.1.0",
           "Microsoft.AspNetCore.All": "2.0.8",
+          "Microsoft.AspNetCore.Cors": "2.0.3",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
           "Model": "1.0.0",

@@ -7,7 +7,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 
 @Injectable()
-export class EmployeeService {
+export class DepartamentoService {
 
     myAppUrl: string = "";
 
@@ -16,38 +16,32 @@ export class EmployeeService {
     }
 
     
-    getFuncionarios() {
-        return this._http.get(this.myAppUrl + 'api/Funcionario/GetFuncionarios')
+    getDepartamentos() {
+        return this._http.get(this.myAppUrl + 'api/Departamento/GetDepartamentos')
                 .map((response: Response) => response.json())
                 .catch(this.errorHandler);
     }
 
-    getEmployees() {
-        return this._http.get(this.myAppUrl + 'api/Funcionario/GetFuncionarios')
-            .map((response: Response) => response.json())
-            .catch(this.errorHandler);
-    }
-
-    getEmployeeById(id: number) {
-        return this._http.get(this.myAppUrl + "api/Funcionario/GetFuncionario?pCodigo=" + id)
+    getDepartamentoById(id: number) {
+        return this._http.get(this.myAppUrl + "api/Departamento/GetDepartamento?pCodigo=" + id)
             .map((response: Response) => response.json())
             .catch(this.errorHandler)
     }
 
-    saveEmployee(employee) {
-        return this._http.post(this.myAppUrl + 'api/Funcionario/Post', employee)
+    saveDepartamento(Departamento) {
+        return this._http.post(this.myAppUrl + 'api/Departamento/Post', Departamento)
             .map((response: Response) => response.json())
             .catch(this.errorHandler)
     }
 
-    updateEmployee(employee) {
-        return this._http.put(this.myAppUrl + 'api/Funcionario/Put', employee)
+    updateDepartamento(Departamento) {
+        return this._http.put(this.myAppUrl + 'api/Departamento/Put', Departamento)
             .map((response: Response) => response.json())
             .catch(this.errorHandler);
     }
 
-    deleteEmployee(id: number) {
-        return this._http.delete(this.myAppUrl + "api/Funcionario/Delete/?pCodigo=" + id)
+    deleteDepartamento(id: number) {
+        return this._http.delete(this.myAppUrl + "api/Departamento/Delete/?pCodigo=" + id)
             .map((response: Response) => response.json())
             .catch(this.errorHandler);
     }

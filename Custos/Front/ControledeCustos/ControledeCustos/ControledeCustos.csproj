@@ -21,15 +21,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\app\components\addemployee\AddEmployee.component.ts" />
-    <None Remove="ClientApp\app\components\fetchemployee\fetchemployee.component.ts" />
-    <None Remove="ClientApp\app\Services\empservice.service.ts" />
+    <None Remove="ClientApp\app\components\movimentacao\addmovimentacao\AddMovimentacao.component.ts" />
+    <None Remove="ClientApp\app\components\movimentacao\fetchmovimentacao\fetchMovimentacao.component.ts" />
+    <None Remove="ClientApp\app\components\departamento\adddepartamento\AddDepartamento.component.ts" />
+    <None Remove="ClientApp\app\components\departamento\fetchdepartamento\fetchDepartamento.component.ts" />
+    <None Remove="ClientApp\app\components\departamento\Services\departamentoservice.service.ts" />
+    <None Remove="ClientApp\app\components\funcionario\addFuncionario\AddFuncionario.component.ts" />
+    <None Remove="ClientApp\app\components\funcionario\fetchFuncionario\fetchFuncionario.component.ts" />
+    <None Remove="ClientApp\app\components\funcionario\Services\funcionarioservice.service.ts" />
+    <None Remove="ClientApp\app\components\movimentacao\Services\movimentacaoservice.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\app\components\addemployee\AddEmployee.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\components\fetchemployee\fetchemployee.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\Services\empservice.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\movimentacao\addmovimentacao\AddMovimentacao.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\movimentacao\fetchmovimentacao\fetchMovimentacao.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\movimentacao\Services\movimentacaoservice.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\departamento\adddepartamento\AddDepartamento.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\departamento\fetchdepartamento\fetchDepartamento.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\departamento\Services\departamentoservice.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\funcionario\addFuncionario\AddFuncionario.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\funcionario\fetchFuncionario\fetchFuncionario.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\funcionario\Services\funcionarioservice.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -2,56 +2,56 @@
 import { Http, Headers } from '@angular/http';
 import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { FetchEmployeeComponent } from '../fetchemployee/fetchemployee.component';
-import { EmployeeService } from '../../services/empservice.service';
+import { FetchDepartamentoComponent } from '../fetchdepartamento/fetchDepartamento.component';    
+import { DepartamentoService } from '../Services/departamentoservice.service';
+
 
 @Component({
-    selector: 'createemployee',
-    templateUrl: './AddEmployee.component.html'
+    selector: 'createDepartamento',
+    templateUrl: './AddDepartamento.component.html'
 })
 
-export class createemployee implements OnInit {
-    employeeForm: FormGroup;
+export class createDepartamento implements OnInit {
+    DepartamentoForm: FormGroup;
     title: string = "Create";
-    codigo: number;
+    codigo: number = 0;
     errorMessage: any;
 
     constructor(private _fb: FormBuilder, private _avRoute: ActivatedRoute,
-        private _employeeService: EmployeeService, private _router: Router) {
+        private _DepartamentoService: DepartamentoService, private _router: Router) {
         if (this._avRoute.snapshot.params["codigo"]) {
             this.codigo = this._avRoute.snapshot.params["codigo"];
         }
 
-        this.employeeForm = this._fb.group({
+        this.DepartamentoForm = this._fb.group({
             codigo: [0, [Validators.required]],
-            nome: ['', [Validators.required]],
-            email: ['', [Validators.required]]
+            nome: ['', [Validators.required]]
         })
     }
 
     ngOnInit() {
         if (this.codigo > 0) {
             this.title = "Edit";
-            this._employeeService.getEmployeeById(this.codigo)
-                .subscribe(resp => this.employeeForm.setValue(resp)
+            this._DepartamentoService.getDepartamentoById(this.codigo)
+                .subscribe(resp => this.DepartamentoForm.setValue(resp)
                 , error => this.errorMessage = error);
         }
     }
 
     save() {
 
-        if (!this.employeeForm.valid) {
+        if (!this.DepartamentoForm.valid) {
             return;
         }
 
         if (this.title == "Create") {
-            this._employeeService.saveEmployee(this.employeeForm.value)
+            this._DepartamentoService.saveDepartamento(this.DepartamentoForm.value)
                 .subscribe((data) => {
                     this._router.navigate(['/Post']);
                 }, error => this.errorMessage = error)
         }
         else if (this.title == "Edit") {
-            this._employeeService.updateEmployee(this.employeeForm.value)
+            this._DepartamentoService.updateDepartamento(this.DepartamentoForm.value)
                 .subscribe((data) => {
                     this._router.navigate(['/Put']);
                 }, error => this.errorMessage = error) 
@@ -59,9 +59,9 @@ export class createemployee implements OnInit {
     }
 
     cancel() {
-        this._router.navigate(['/GetFuncionarios']);
+        this._router.navigate(['/GetDepartamentos']);
     }
 
-    get nome() { return this.employeeForm.get('nome'); }
-    get email() { return this.employeeForm.get('email'); }
+    get nome() { return this.DepartamentoForm.get('nome'); }
+
 }

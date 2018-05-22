@@ -19,11 +19,16 @@ namespace Dal.Repositories
         {            
             if (predicate != null)
             {
-                return m_Context.Movimentacao.Where(predicate);
+                return m_Context.Movimentacao
+                    .Include(i => i.Departamento)
+                    .Include(i => i.Funcionario)
+                    .Where(predicate);
             }
             else
             {
-                return m_Context.Movimentacao;
+                return m_Context.Movimentacao
+                    .Include(i=> i.Departamento)
+                    .Include(i => i.Funcionario);
             }
 
         }

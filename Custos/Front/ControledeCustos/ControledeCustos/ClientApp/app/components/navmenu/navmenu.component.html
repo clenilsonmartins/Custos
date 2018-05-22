@@ -7,19 +7,29 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]="['/home']">ASPCoreWithAngular</a>
+            <a class='navbar-brand' [routerLink]="['/home']">Controle de Custos</a>
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
             <ul class='nav navbar-nav'>
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/home']">
-                        <span class='glyphicon glyphicon-home'></span> Home
+                        <span class='glyphicon glyphicon-home'></span> Inicio
                     </a>
                 </li>
                 <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-employee']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch employee
+                    <a [routerLink]="['/Funcionario']">
+                        <span class='glyphicon glyphicon-th-list'></span> Funcionarios
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/Departamento']">
+                        <span class='glyphicon glyphicon-th-list'></span> Departamento
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/Movimentacao']">
+                        <span class='glyphicon glyphicon-th-list'></span> Movimentacao
                     </a>
                 </li>
             </ul>

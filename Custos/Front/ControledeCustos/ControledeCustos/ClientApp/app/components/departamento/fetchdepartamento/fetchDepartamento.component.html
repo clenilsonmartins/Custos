@@ -1,0 +1,26 @@
+﻿<h1>Lista de Departamentos</h1>
+
+<p *ngIf="!DepList"><em>Loading...</em></p>
+
+<p>
+    <a [routerLink]="['/departamento/edit']">Adicionar Novo</a>
+</p>
+
+<table class='table' *ngIf="DepList">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dep of DepList">
+            <td>{{ dep.codigo }}</td>
+            <td>{{ dep.nome }}</td>
+            <td>
+                <a [routerLink]="['/departamento/edit/', dep.codigo]">Editar</a> |
+                <a [routerLink]="" (click)="delete(dep.codigo)">Apagar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -19,5 +19,7 @@ namespace Model
         [MaxLength(100, ErrorMessage = "No máximo {1} caracteres no campo {0} ")]
         public string Nome { get; set; }
 
+
+        public virtual Funcionario Funcionario { get; set; }
     }
 }

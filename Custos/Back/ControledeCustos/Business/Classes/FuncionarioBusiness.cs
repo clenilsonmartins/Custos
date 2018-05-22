@@ -42,6 +42,12 @@ namespace Business
                     "Código de Funcionario já cadastrado");
             }
 
+            if ((vFuncionario.Departamentos == null) && (vFuncionario.Departamentos.Count == 0))
+            {
+                resultado.Inconsistencias.Add(
+                    "DEverá Ser Selecionado Pelo Menos Um Departamento");
+            }
+
             if (resultado.Inconsistencias.Count == 0)
             {
                 uow.FuncionarioRepository.Insert(pObject);
